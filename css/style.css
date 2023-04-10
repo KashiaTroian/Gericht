@@ -194,6 +194,9 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main_tag {
@@ -223,6 +226,20 @@ html, body {
   font-size: 23px;
   line-height: 130%;
   text-transform: capitalize;
+  position: relative;
+}
+
+.main_subtitle::after {
+  content: "";
+  background-image: url(../img/spoon.svg);
+  background-size: 40px 9px;
+  position: absolute;
+  width: 40px;
+  height: 9px;
+  top: 34px;
+  left: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .main_title {
@@ -232,7 +249,7 @@ html, body {
   line-height: 130%;
   text-transform: capitalize;
   color: #DCCA87;
-  margin: 8px 0 32px;
+  margin: 16px 0 32px;
 }
 
 .main_p-text {
@@ -244,6 +261,15 @@ html, body {
   display: inline-block;
   padding: 8px 32px;
   background-color: #DCCA87;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #0C0B08;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
+}
+
+.main_btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
