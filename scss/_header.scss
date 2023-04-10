@@ -6,9 +6,6 @@
 	padding-bottom: 32px; 
 	&_logo{
 		max-width: 199px;
-	}}
-	.nav_list {
-		display:flex; 
 	}
 	a{
 		font-family: $fonts-t;
@@ -21,11 +18,15 @@
 		transition: .3s linear;
 
 		&:hover{
-			transform: scale(2);
 			color: $color-y;
 		}
 		
 	}
+}
+	.nav_list {
+		display:flex; 
+	}
+
 	.nav_item+.nav_item {
 		margin-left: 32px;
 	}
