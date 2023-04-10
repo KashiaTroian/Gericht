@@ -1,0 +1,20 @@
+@import '_reset';
+@import '_variable';
+
+html, body{
+	background: #0C0B08;
+	color: $color-w;
+	font-family: $fonts-t;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 175%;
+	letter-spacing: 0.04em;
+}
+.container {
+	max-width: 1680px;
+	width: 100%;
+	margin: 0 auto;
+}
+@import 'header';
+@import '_footer';

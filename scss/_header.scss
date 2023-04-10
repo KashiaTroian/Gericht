@@ -1,0 +1,53 @@
+.header {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 32px;
+	padding-bottom: 32px; 
+	&_logo{
+		max-width: 199px;
+	}}
+	.nav_list {
+		display:flex; 
+	}
+	a{
+		font-family: $fonts-t;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 175%;
+		letter-spacing: 0.04em;
+		color: $color-w;
+		transition: .3s linear;
+
+		&:hover{
+			transform: scale(2);
+			color: $color-y;
+		}
+		
+	}
+	.nav_item+.nav_item {
+		margin-left: 32px;
+	}
+	.header_service{
+		display:flex; 
+		position: relative;
+		max-height: 57px;
+	}
+	.service_log{
+		margin-right: 50px;
+	}
+	.service_book {
+		margin-left: 50px;
+		}
+		.service_book::before {
+			content: '';
+			width: 1px;
+			height: 100%;
+			background-color: $color-g;
+			left: -50px;
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	
