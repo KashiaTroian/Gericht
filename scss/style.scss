@@ -16,6 +16,19 @@ html, body{
 	width: 100%;
 	margin: 0 auto;
 }
+.btn {
+	display: inline-block;
+	padding: 8px 32px;
+	background-color: $color-y;
+	font-family: $fonts-h;
+	font-weight: 700;
+	font-size: 16px;
+color: #0C0B08;
+	transition: .3s linear;
+}
+.btn:hover{
+	transform: scale(1.2);
+}
 @import 'header';
 @import 'main';
 @import 'about';

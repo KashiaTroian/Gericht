@@ -118,6 +118,23 @@ html, body {
   margin: 0 auto;
 }
 
+.btn {
+  display: inline-block;
+  padding: 8px 32px;
+  background-color: #DCCA87;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #0C0B08;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,39 +274,33 @@ html, body {
   margin-bottom: 32px;
 }
 
-.main_btn {
-  display: inline-block;
-  padding: 8px 32px;
-  background-color: #DCCA87;
-  font-family: "Cormorant Upright", serif;
-  font-weight: 700;
-  font-size: 16px;
-  color: #0C0B08;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
-}
-
-.main_btn:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
 .about-history {
   background: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
 }
 
 .about-history-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  max-width: 1300px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: 147px;
-  padding: 120px 0 136px;
+  padding: 339px 0 323px;
+  background-image: url(../img/Group.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.about {
+  text-align: right;
 }
 
 .about-history-block {
@@ -338,21 +349,6 @@ html, body {
   left: 0;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-}
-
-.about_img {
-  position: relative;
-  /* &::before{
-  	content: "";
-  	background-image:  url(../img/G.svg);
-  	background-size: 391px 415px;
-  	position: absolute;
-  	width: 391px;
-     height: 415px;
-  	top: 86px;
-  	left: 0;
-  	background: #272727;
-  }*/
 }
 
 .about_text {
