@@ -18,29 +18,15 @@
 	max-width: 453px; 
 	margin-right: 180px;
 }
-.main_subtitle {
-	font-family: $fonts-h;
-	font-weight: 700;
-	font-size: 23px;
-	line-height: 130%;
-	text-transform: capitalize;
-	position: relative;
-}
-.main_subtitle::after {
-	content: "";
-	background-image:  url(../img/spoon.svg);
-	background-size: 40px 9px;
-	position: absolute;
-	width: 40px;
-	height: 9px;
-	top: 34px;
-	left: 0;
-	transform: rotate(180deg);
-
+.main_text {
+	.subtitle::after{
+		top: 34px;
+	   left: 0;
+	}
 }
 .main_title{
-	font-family: $fonts-h;
-	font-weight: 700;
+font-family: $fonts-h;
+font-weight: 700;
 font-size: 90px;
 line-height: 130%;
 text-transform: capitalize;

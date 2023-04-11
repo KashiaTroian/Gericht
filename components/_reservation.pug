@@ -1,0 +1,13 @@
+section.reservation.wrapper 
+	h3.subtitle.reservation_subtitle Reservations
+	h2.section_title.reservation_title Book A Table
+	form.reservation_form(action="/reservation" method="post" name="Reservations" id="reserv")
+		.form_wrapper
+			select(name="person" id="person" form="reserv")
+				option(value="1") 1 person
+				option(value="1") 2 person
+				option(value="1") 3 person
+				option(value="1") 4 person
+			input(type="date" id="start" name="reserv" value="2022-07-22" min="2022-07-22" max="2022-12-31")
+			input(type="time" id="time" name="time" value="11:00" min="11:00" max="22:00")
+		input.btn.form_btn(type="submit" value="Book Now")

@@ -1,0 +1,39 @@
+.reservation_subtitle{
+	text-align: center;
+&:after{
+	top: 36px;
+	left: 49%;
+}}
+.reservation{
+	text-align: center;
+	&_title {
+		margin: 25px 0 64px 0;
+	}
+	padding: 48px 0 48px;
+}
+.form_wrapper{
+	display: flex;
+	justify-content: space-evenly;
+	select, input {
+
+		padding: 16px;
+		font-family: $fonts-h;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 175%;
+		text-align: center;
+		letter-spacing: 0.04em;
+		text-transform: capitalize;
+		font-feature-settings: 'tnum' on, 'lnum' on;
+		color: $color-g;
+		min-width: 412px;
+		max-height: 60px;
+		border: 1px solid $color-y;
+		background-color: $color-b;
+		text-align: left;
+	}
+}
+.form_btn {
+	margin-top: 64px;
+}
