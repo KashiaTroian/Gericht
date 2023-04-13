@@ -1,8 +1,14 @@
 .reservation_subtitle{
 	text-align: center;
+	position: relative;
 &:after{
+	position: absolute;
+	display: block;
 	top: 36px;
-	left: 49%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
 }}
 .reservation{
 	text-align: center;
@@ -15,7 +21,6 @@
 	display: flex;
 	justify-content: space-evenly;
 	select, input {
-
 		padding: 16px;
 		font-family: $fonts-h;
 		font-style: normal;
