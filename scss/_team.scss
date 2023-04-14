@@ -1,0 +1,70 @@
+.team_wrapp {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.team_img{
+	max-width: 634px;
+}
+.team_info {
+	max-width: 570px;
+}
+.team_subtitle::after{
+	top: 34px;
+	left: 0;
+}
+.team_title {
+	margin: 24px 0 64px;
+}
+.team_text {
+	font-family: $fonts-t;
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+letter-spacing: 0.04em;
+color: $color-g;
+text-indent: 58px;
+position: relative;
+margin-bottom: 64px;
+&::before {
+	content: '';
+	background-image: url(../img/l.svg);
+	background-repeat: no-repeat;
+	width: 47px;
+	height: 40%;
+	top: -10px;
+position: absolute;
+left: 0;
+}	
+}
+.shefs_block {
+	display: flex;
+	flex-direction: column;
+	.shef_name{
+		font-family: $fonts-h;
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 130%;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+font-feature-settings: 'tnum' on, 'lnum' on;
+color: $color-y;
+margin-bottom: 8px;
+	}
+	.shef_position{
+		font-family: $fonts-t;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+letter-spacing: 0.04em;
+color: $color-g;
+margin-bottom: 64px;
+	}
+	.shef_graf{
+		color: $color-g;
+		max-width: 235px;
+	}
+}

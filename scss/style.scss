@@ -1,6 +1,5 @@
 @import '_reset';
 @import '_variable';
-
 html, body{
 	background: #0C0B08;
 	color: $color-w;
@@ -69,4 +68,5 @@ color: #0C0B08;
 @import 'about';
 @import '_reservation';
 @import '_menu_section';
+@import '_team';
 @import '_footer';

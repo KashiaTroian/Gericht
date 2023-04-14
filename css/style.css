@@ -577,3 +577,91 @@ html, body {
           justify-content: center;
   margin-top: 64px;
 }
+
+.team_wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team_img {
+  max-width: 634px;
+}
+
+.team_info {
+  max-width: 570px;
+}
+
+.team_subtitle::after {
+  top: 34px;
+  left: 0;
+}
+
+.team_title {
+  margin: 24px 0 64px;
+}
+
+.team_text {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  text-indent: 58px;
+  position: relative;
+  margin-bottom: 64px;
+}
+.team_text::before {
+  content: "";
+  background-image: url(../img/l.svg);
+  background-repeat: no-repeat;
+  width: 47px;
+  height: 40%;
+  top: -10px;
+  position: absolute;
+  left: 0;
+}
+
+.shefs_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.shefs_block .shef_name {
+  font-family: "Cormorant Upright", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+  margin-bottom: 8px;
+}
+.shefs_block .shef_position {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #AAAAAA;
+  margin-bottom: 64px;
+}
+.shefs_block .shef_graf {
+  color: #AAAAAA;
+  max-width: 235px;
+}
