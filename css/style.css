@@ -665,3 +665,92 @@ html, body {
   color: #AAAAAA;
   max-width: 235px;
 }
+
+.testimony_section {
+  padding: 152px 0 172px;
+}
+
+.testimony_subtitle {
+  position: relative;
+  text-align: center;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.testimony_subtitle::after {
+  position: absolute;
+  display: block;
+  top: 36px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.testimony_title {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.testimony_wrap {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+  row-gap: 64px;
+  -ms-grid-columns: 1fr 32px 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.testimony_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.testimony_img {
+  position: relative;
+}
+.testimony_img::after {
+  content: "";
+  background-image: url(../img/l.svg);
+  background-repeat: no-repeat;
+  width: 47px;
+  height: 40%;
+  bottom: -56px;
+  position: absolute;
+  right: 0;
+}
+
+.testimony_info {
+  max-width: 412px;
+}
+
+.testimony_text {
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.testimony_name {
+  font-family: "Cormorant Upright", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+  margin-bottom: 8px;
+}
+
+.testimony_position {
+  color: #F5EFDB;
+  line-height: 120%;
+}
