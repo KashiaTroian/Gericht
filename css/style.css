@@ -813,3 +813,85 @@ html, body {
 .video--enabled .video__button {
   display: block;
 }
+
+.awards_section {
+  padding: 128px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.awards_subtitle {
+  margin-bottom: 24px;
+}
+
+.awards_title {
+  margin-bottom: 64px;
+}
+
+.awards_wraper {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+  row-gap: 64px;
+  -ms-grid-columns: 1fr 32px 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.awards_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.awards_item img {
+  width: 79px;
+  height: 79px;
+}
+
+.awards-item_info {
+  max-width: 190px;
+  margin-left: 32px;
+}
+
+.awards-info_title {
+  font-family: "Cormorant Upright", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  -webkit-font-feature-settings: "tnum" on, "lnum" on;
+          font-feature-settings: "tnum" on, "lnum" on;
+  color: #DCCA87;
+  margin-bottom: 8px;
+}
+
+.awards-info_text {
+  color: #AAAAAA;
+}
+
+.awards_img {
+  position: relative;
+}
+.awards_img::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/G2.svg");
+  opacity: 0.8;
+  width: 360px;
+  height: 379px;
+  bottom: 0;
+  left: -80px;
+}
